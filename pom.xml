@@ -26,6 +26,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   <exclusions>
+        <!--Exclude transitive dependency to JUnit-3.8.2 -->
+        <exclusion>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+         </exclusion>
+    </exclusions>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
